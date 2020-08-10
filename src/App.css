@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.9);
+}
+.title {
+  color: white;
+  font-size: 32px;
+  font-weight: light;
+  line-height: 1;
+}
+.subtitle {
+  color: #171717;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.catch-pokemon {
+  min-height: 300px;
+  background-color: tomato;
+  padding: 15px;
+}
+.catch-pokemon h2 {
+  color: #f3f3f3;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+}
+
+.catch-pokemon .sprite {
+  display: block;
+  width: 150px;
+  margin: 0px auto;
+}
+
+.catch-pokemon h3 {
+  color: #f3f3f3;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+
+.catch-pokemon .catch-btn {
+  width: 150px;
+  height: 35px;
+  display: block;
+  margin: 25px auto;
+  background: white;
+  border: none;
+  outline: none;
+  color: #171717;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.catch-pokemon .catch-btn:active {
+  background: tomato;
+}
+
+.pokemon-name {
+  outline: none;
+  border: none;
+}
+.pokedex {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-flow: column;
+  overflow: scroll;
+}
+
+.pokedex-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 15px;
+}
+
+.pokedex-list .pokemon {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  min-height: 150px;
+  padding: 15px;
+  background: #f3f3f3;
+}
+
+.pokedex-list .pokemon .remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  outline: none;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  background: rgb(219, 18, 18);
+  color: #ffffff;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.pokedex-list .pokemon .sprite {
+  width: 100%;
+}
+
+/* .app-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #e4dfda;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  color: #48a9a6;
+}
+.catch-btn {
+  padding: 7px;
+  font-weight: bold;
+  background-color: #4357ad;
+  border: none;
+  border-radius: 15px;
+  color: #e4dfda;
+  outline: none;
+}
+
+.pokemonName {
+  margin-bottom: 10px;
+  color: #5f71c4;
+  font-weight: bold;
+}
+.catchTitle {
+  color: #4357ad;
+}
+
+.ownedPokemon {
+  color: #c1666b;
+}
+
+.divider {
+  border: 1px solid grey;
+  width: 60%;
+  margin: 20px;
+  margin-top: 40px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+}
+.pokedexTitle {
+  color: #c1666b;
+}
+
+.remove {
+  padding: 7px;
+  font-weight: bold;
+  background-color: #c1666b;
+  border: none;
+  border-radius: 15px;
+  color: #e4dfda;
+  outline: none;
+}
+
+.flex {
+  flex-direction: column;
+}
+.pokegallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: space-between;
+  margin: 10px;
+}
+
+.card {
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 6px 10px 5px 0px rgba(199, 197, 199, 0.75);
+}
+
+.catch-pokemon {
+  flex-direction: column-reverse;
+} */
